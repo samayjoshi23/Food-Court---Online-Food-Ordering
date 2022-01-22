@@ -1,0 +1,195 @@
+/* ==================== Impoerts =================== */
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Poppins:wght@400;500&display=swap");
+
+/* ================= CSS Reset ============== */
+* {
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* a {
+  text-decoration: none;
+  color: black;
+}
+* a:hover {
+  color: black;
+}
+
+/* ================== Root =================== */
+
+:root {
+  --font1: "Dongle", sans-serif;
+  --font2: "Poppins", sans-serif;
+  --primary-color: #f1b500;
+  --bg-gradient:  url('../images/topography.svg'), linear-gradient(
+    to right,
+    rgba(255, 83, 158, 0.3),
+    rgba(49, 104, 255, 0.3)
+  );
+}
+body {
+  background-image: var(--bg-gradient);
+}
+main,
+.navbar__list {
+  font-family: var(--font2);
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* =============== Navbar ================ */
+.navigation__bar {
+  margin: 2rem 0;
+}
+.navbar__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  padding: 1rem 0;
+  font-family: var(--font1);
+}
+
+.navbar__items {
+  text-align: center;
+  background-color: var(--primary-color);
+  border-radius: 0.4rem;
+  padding: 0.3rem 0 0.15rem 0;
+  font-size: 2.3rem;
+}
+
+/* ================ Branding Container ================= */
+.branding {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1rem;
+}
+.brandLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  background-image: url("../images/home-page/main-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-row: 1/3;
+  height: 50vh;
+  position: relative;
+  border-radius: 0.4rem;
+}
+.brandLogo::after {
+  border-radius: 0.4rem;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.brandlogo__title,
+.brandLogo__subtitle {
+  position: absolute;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.9);
+}
+.brandlogo__title {
+  font-family: var(--font1);
+  font-size: 5rem;
+  line-height: 0.6;
+  padding: 1rem 2rem 0.2rem 2rem;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 20;
+}
+.brandLogo__subtitle {
+  z-index: 19;
+  font-size: 1.55rem;
+  padding: 0 1rem;
+  top: 52%;
+  left: 10%;
+}
+.popularDish {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 0.4rem;
+}
+.popularDish__price {
+  font-size: 3.5rem;
+}
+.popularDish__price span {
+  font-size: 1.5rem;
+}
+.popularDish__name {
+  font-family: var(--font1);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* =============== Extras Cards ===================== */
+.extras {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.extras a {
+  border-radius: 0.4rem;
+  background-color: white;
+}
+.extras__card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  grid-row: 1/2;
+}
+.extras__card-img {
+  width: 35%;
+  border-radius: 50%;
+}
+.extras__card-title {
+  font-family: var(--font1);
+  font-size: 3rem;
+}
+
+/* =================== Featured Section */
+.featured__food {
+  display: flex;
+  padding: 0.8rem;
+  background-color: white;
+  border-radius: 0.4rem;
+  margin: 1rem 0;
+}
+.featured__food-img {
+  width: 50%;
+  border-radius: 0.3rem;
+}
+.featured__food--about {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  justify-content: center;
+  gap: 2rem;
+}
+.featured__food-title {
+  font-family: var(--font1);
+  font-size: 5rem;
+}
+
+/* ============ Footer ============ */
+.footer__bar {
+  margin: 2rem auto;
+  padding: 0.5rem 0 0.7rem 0;
+  width: 90%;
+  text-align: center;
+  background-color: var(--primary-color);
+  border-radius: 0.4rem;
+}

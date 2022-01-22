@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Food Court -Pizza</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'
+		integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous' />
+	<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
+		integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous'>
+		</script>
+	<link rel="stylesheet" href="../static/CSS/Index.css">
+	<link rel="stylesheet" href="../static/CSS/showPage.css">	
+</head>
+
+<body>
+	<nav class="navigation__bar">
+		<ul class="navbar__list">
+			<a href="./pizza.html">
+				<li class="navbar__items" id="nav-pizza">Pizza</li>
+			</a>
+			<a href="./beers.html">
+				<li class="navbar__items" id="nav-beers">Beers</li>
+			</a>
+			<a href="./burgers.html">
+				<li class="navbar__items" id="nav-burgers">Burgers</li>
+			</a>
+			<a href="./desserts.html">
+				<li class="navbar__items" id="nav-desserts">Deserts</li>
+			</a>
+			<a href="#">
+				<li class="navbar__items" id="nav-reservations">Reservations</li>
+			</a>
+		</ul>
+	</nav>
+
+	<main class="main-container">
+		<section class="header__section">
+			<h2 class="header__section-title">Pizza Menu</h2>
+			<h4 class="header__section-subtitle">Try some best in town pizza...</h4>
+			<div class="menu-tags">
+				<p class="menu-tag">Italian Pizza</p>
+				<p class="menu-tag">Hawaiian Pizza</p>
+				<p class="menu-tag">Cheese Pizza</p>
+				<p class="menu-tag">Marinara Pizza</p>
+				<p class="menu-tag">Mushrooms Pizza</p>
+				<p class="menu-tag">Veg / Non-veg Pizza</p>
+				<p class="menu-tag">Good Price</p>
+				<p class="menu-tag">Hot and Delicious</p>
+				<p class="menu-tag">Super-fast Delivery</p>
+			</div>
+		</section>
+
+		<section class="menu__wrapper">
+			<div class="item__card">
+				<img src="../static/images/inner-pages/pizzaPrimeLoadedL.jpg" alt="" srcset="" class="item__card-img">
+				<div class="item__card-descriptors">
+					<h3 class="item__card-title">Prime Loaded</h3>
+					<div class="item__card-food">
+						<div class="food-type"></div>
+						<h5 class="item__card-type">Veg</h5>
+					</div>
+					<div class="counter-btns">
+						<button class="counter-btn minus">-</button>
+						<button id="foodCounter" class="counter-btn num">0</button>
+						<button class="counter-btn plus">+</button>
+					</div>
+				</div>
+				<div class="size-btn-group">
+					<button class="size-btn"><span class="size">Regular </span> <span class="price">Rs.
+							130</span></button>
+					<button class="size-btn"><span class="size">Medium </span> <span class="price">Rs.
+							189</span></button>
+					<button class="size-btn"><span class="size">Large </span> <span class="price">Rs.
+							230</span></button>
+				</div>
+			</div>
+			<div class="item__card">
+				<img src="../static/images/inner-pages/Farmhouse.jpg" alt="" srcset="" class="item__card-img">
+				<div class="item__card-descriptors">
+					<h3 class="item__card-title">Farmhouse Pizza</h3>
+					<div class="item__card-food">
+						<div class="food-type"></div>
+						<h5 class="item__card-type">Veg</h5>
+					</div>
+					<div class="counter-btns">
+						<button class="counter-btn minus">-</button>
+						<button id="foodCounter" class="counter-btn num">0</button>
+						<button class="counter-btn plus">+</button>
+					</div>
+				</div>
+				<div class="size-btn-group">
+					<button class="size-btn"><span class="size">Regular </span> <span class="price">Rs.
+							150</span></button>
+					<button class="size-btn"><span class="size">Medium </span><span class="price">Rs.
+							210</span></button>
+					<button class="size-btn"><span class="size">Large </span><span class="price">Rs. 255</span></button>
+				</div>
+			</div>
+			<div class="item__card">
+				<img src="../static/images/inner-pages/golden_corn_veg.jpg" alt="" srcset="" class="item__card-img">
+				<div class="item__card-descriptors">
+					<h3 class="item__card-title">Golden Corn veg</h3>
+					<div class="item__card-food">
+						<div class="food-type"></div>
+						<h5 class="item__card-type">Veg</h5>
+					</div>
+					<div class="counter-btns">
+						<button class="counter-btn minus">-</button>
+						<button id="foodCounter" class="counter-btn num">0</button>
+						<button class="counter-btn plus">+</button>
+					</div>
+				</div>
+				<div class="size-btn-group">
+					<button class="size-btn"><span class="size">Regular </span> <span class="price">Rs.
+							125</span></button>
+					<button class="size-btn"><span class="size">Medium </span><span class="price">Rs.
+							179</span></button>
+					<button class="size-btn"><span class="size">Large </span><span class="price">Rs. 240</span></button>
+				</div>
+			</div>
+			<div class="item__card">
+				<img src="../static/images/inner-pages/Non-Veg_Supreme.jpg" alt="" srcset="" class="item__card-img">
+				<div class="item__card-descriptors">
+					<h3 class="item__card-title">Non-Veg Supreme</h3>
+					<div class="item__card-food">
+						<div class="food-type"></div>
+						<h5 class="item__card-type">Non-Veg</h5>
+					</div>
+					<div class="counter-btns">
+						<button class="counter-btn minus">-</button>
+						<button id="foodCounter" class="counter-btn num">0</button>
+						<button class="counter-btn plus">+</button>
+					</div>
+				</div>
+				<div class="size-btn-group">
+					<button class="size-btn"><span class="size">Regular </span> <span class="price">Rs.
+							159</span></button>
+					<button class="size-btn"><span class="size">Medium </span><span class="price">Rs.
+							220</span></button>
+					<button class="size-btn"><span class="size">Large </span><span class="price">Rs. 280</span></button>
+				</div>
+			</div>
+			<div class="item__card">
+				<img src="../static/images/inner-pages/IndianChickenTikka.jpg" alt="" srcset="" class="item__card-img">
+				<div class="item__card-descriptors">
+					<h3 class="item__card-title">Indian Chicken Tikka</h3>
+					<div class="item__card-food">
+						<div class="food-type"></div>
+						<h5 class="item__card-type">Non-Veg</h5>
+					</div>
+					<div class="counter-btns">
+						<button class="counter-btn minus">-</button>
+						<button id="foodCounter" class="counter-btn num">0</button>
+						<button class="counter-btn plus">+</button>
+					</div>
+				</div>
+				<div class="size-btn-group">
+					<button class="size-btn"><span class="size">Regular </span> <span class="price">Rs.
+							175</span></button>
+					<button class="size-btn"><span class="size">Medium </span><span class="price">Rs.
+							240</span></button>
+					<button class="size-btn"><span class="size">Large </span><span class="price">Rs. 310</span></button>
+				</div>
+			</div>
+			<div class="item__card">
+				<img src="../static/images/inner-pages/Chicken_Golden_Delight.jpg" alt="" srcset=""
+					class="item__card-img">
+				<div class="item__card-descriptors">
+					<h3 class="item__card-title">Chicken Golden Delight</h3>
+					<div class="item__card-food">
+						<div class="food-type"></div>
+						<h5 class="item__card-type">Non-Veg</h5>
+					</div>
+					<div class="counter-btns">
+						<button class="counter-btn minus">-</button>
+						<button id="foodCounter" class="counter-btn num">0</button>
+						<button class="counter-btn plus">+</button>
+					</div>
+				</div>
+				<div class="size-btn-group">
+					<button class="size-btn"><span class="size">Regular </span> <span class="price">Rs.
+							165</span></button>
+					<button class="size-btn"><span class="size">Medium </span><span class="price">Rs.
+							280</span></button>
+					<button class="size-btn"><span class="size">Large </span><span class="price">Rs. 325</span></button>
+				</div>
+			</div>			
+		</section>
+
+		<section class="proceed-btn">
+			<button id="proceed">Proceed to place Order</button>
+		</section>
+		<aside class="loading-menu">
+			<h4>More Options will be loaded in few days...</h4>
+		</aside>
+	</main>
+
+
+	<footer>
+		<div class="footer__bar">
+			<h6>&copy; Copyright 2021, FoodCourt.com. All Rights Reserved</h6>
+		</div>
+	</footer>
+
+	<script src="../static/javaScripts/menuPage.js"></script>
+</body>
+
+</html>

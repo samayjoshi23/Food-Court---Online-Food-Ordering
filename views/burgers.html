@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Food Court -Burgers</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'
+		integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous' />
+	<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
+		integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous'>
+		</script>
+	<link rel="stylesheet" href="../static/CSS/Index.css">
+	<link rel="stylesheet" href="../static/CSS/showPage.css">
+</head>
+
+<body>
+	<nav class="navigation__bar">
+		<ul class="navbar__list">
+			<a href="./pizza.html">
+				<li class="navbar__items" id="nav-pizza">Pizza</li>
+			</a>
+			<a href="./beers.html">
+				<li class="navbar__items" id="nav-beers">Beers</li>
+			</a>
+			<a href="./burgers.html">
+				<li class="navbar__items" id="nav-burgers">Burgers</li>
+			</a>
+			<a href="./desserts.html">
+				<li class="navbar__items" id="nav-desserts">Deserts</li>
+			</a>
+			<a href="#">
+				<li class="navbar__items" id="nav-reservations">Reservations</li>
+			</a>
+		</ul>
+	</nav>
+
+	<main class="main-container">
+		<section class="header__section">
+			<h2 class="header__section-title">Burgers Menu</h2>
+			<h4 class="header__section-subtitle">A burger without cheese is like a hug without a squeeze.</h4>
+			<div class="menu-tags">
+				<p class="menu-tag">Standard</p>
+				<p class="menu-tag">Cheese</p>
+				<p class="menu-tag">Double</p>
+				<p class="menu-tag">Sandwitches</p>
+				<p class="menu-tag">French Fries</p>
+				<p class="menu-tag">Veg-NonVeg</p>
+			</div>
+		</section>
+
+		<section class="menu__wrapper">
+			<div class="item__card">
+				<img src="../static/images/inner-pages/vegwhooper.jpg" alt="" srcset="" class="item__card-img">
+				<div class="item__card-descriptors">
+					<h3 class="item__card-title">Veg Whooper</h3>
+					<div class="item__card-food">
+						<div class="food-type"></div>
+						<h5 class="item__card-type">Veg</h5>
+					</div>
+					<div class="counter-btns">
+						<button class="counter-btn minus">-</button>
+						<button id="foodCounter" class="counter-btn num">0</button>
+						<button class="counter-btn plus">+</button>
+					</div>
+				</div>
+				<div class="size-btn-group">
+					<button class="size-btn">
+						<span class="size">Normal </span>
+						<span class="price">Rs. 149</span>
+					</button>
+					<button class="size-btn">
+						<span class="size">Extra Veggie</span>
+						<span class="price">Rs. 180</span>
+					</button>
+					<button class="size-btn">
+						<span class="size">Extra Cheese</span>
+						<span class="price">Rs. 210</span>
+					</button>
+				</div>
+			</div>
+			<div class="item__card">
+				<img src="../static/images/inner-pages/cryspyveg.png" alt="" srcset="" class="item__card-img">
+				<div class="item__card-descriptors">
+					<h3 class="item__card-title">Crispy Veg Burger</h3>
+					<div class="item__card-food">
+						<div class="food-type"></div>
+						<h5 class="item__card-type">Veg</h5>
+					</div>
+					<div class="counter-btns">
+						<button class="counter-btn minus">-</button>
+						<button id="foodCounter" class="counter-btn num">0</button>
+						<button class="counter-btn plus">+</button>
+					</div>
+				</div>
+				<div class="size-btn-group">
+					<button class="size-btn">
+						<span class="size">Normal </span>
+						<span class="price">Rs. 180</span>
+					</button>
+					<button class="size-btn">
+						<span class="size">Extra Veggie</span>
+						<span class="price">Rs. 220</span>
+					</button>
+					<button class="size-btn">
+						<span class="size">Extra Cheese</span>
+						<span class="price">Rs. 250</span>
+					</button>
+				</div>
+			</div>
+			<div class="item__card">
+				<img src="../static/images/inner-pages/paneerburger.jpg" alt="" srcset="" class="item__card-img">
+				<div class="item__card-descriptors">
+					<h3 class="item__card-title">Paneer Overload</h3>
+					<div class="item__card-food">
+						<div class="food-type"></div>
+						<h5 class="item__card-type">Veg</h5>
+					</div>
+					<div class="counter-btns">
+						<button class="counter-btn minus">-</button>
+						<button id="foodCounter" class="counter-btn num">0</button>
+						<button class="counter-btn plus">+</button>
+					</div>
+				</div>
+				<div class="size-btn-group">
+					<button class="size-btn">
+						<span class="size">Normal </span>
+						<span class="price">Rs. 175</span>
+					</button>
+					<button class="size-btn">
+						<span class="size">Extra Veggie</span>
+						<span class="price">Rs. 215</span>
+					</button>
+					<button class="size-btn">
+						<span class="size">Extra Cheese</span>
+						<span class="price">Rs. 260</span>
+					</button>
+				</div>
+			</div>
+			<div class="item__card">
+				<img src="../static/images/inner-pages/mutton whooper.jpg" alt="" srcset="" class="item__card-img">
+				<div class="item__card-descriptors">
+					<h3 class="item__card-title">Mutton Whooper</h3>
+					<div class="item__card-food">
+						<div class="food-type"></div>
+						<h5 class="item__card-type">Non-Veg</h5>
+					</div>
+					<div class="counter-btns">
+						<button class="counter-btn minus">-</button>
+						<button id="foodCounter" class="counter-btn num">0</button>
+						<button class="counter-btn plus">+</button>
+					</div>
+				</div>
+				<div class="size-btn-group">
+					<button class="size-btn">
+						<span class="size">Normal </span>
+						<span class="price">Rs. 190</span>
+					</button>
+					<button class="size-btn">
+						<span class="size">Extra Veggie</span>
+						<span class="price">Rs. 235</span>
+					</button>
+					<button class="size-btn">
+						<span class="size">Extra Cheese</span>
+						<span class="price">Rs. 270</span>
+					</button>
+				</div>
+			</div>
+			<div class="item__card">
+				<img src="../static/images/inner-pages/chickentandoorgrill.png" alt="" srcset="" class="item__card-img">
+				<div class="item__card-descriptors">
+					<h3 class="item__card-title">Chicken Tandoor Grill</h3>
+					<div class="item__card-food">
+						<div class="food-type"></div>
+						<h5 class="item__card-type">Veg</h5>
+					</div>
+					<div class="counter-btns">
+						<button class="counter-btn minus">-</button>
+						<button id="foodCounter" class="counter-btn num">0</button>
+						<button class="counter-btn plus">+</button>
+					</div>
+				</div>
+				<div class="size-btn-group">
+					<button class="size-btn">
+						<span class="size">Normal </span>
+						<span class="price">Rs. 220</span>
+					</button>
+					<button class="size-btn">
+						<span class="size">Extra Veggie</span>
+						<span class="price">Rs. 260</span>
+					</button>
+					<button class="size-btn">
+						<span class="size">Extra Cheese</span>
+						<span class="price">Rs. 300</span>
+					</button>
+				</div>
+			</div>
+			<div class="item__card">
+				<img src="../static/images/inner-pages/eggburger.jpg" alt="" srcset="" class="item__card-img">
+				<div class="item__card-descriptors">
+					<h3 class="item__card-title">King Egg Burger</h3>
+					<div class="item__card-food">
+						<div class="food-type"></div>
+						<h5 class="item__card-type">Veg</h5>
+					</div>
+					<div class="counter-btns">
+						<button class="counter-btn minus">-</button>
+						<button id="foodCounter" class="counter-btn num">0</button>
+						<button class="counter-btn plus">+</button>
+					</div>
+				</div>
+				<div class="size-btn-group">
+					<button class="size-btn">
+						<span class="size">Normal </span>
+						<span class="price">Rs. 150</span>
+					</button>
+					<button class="size-btn">
+						<span class="size">Extra Veggie</span>
+						<span class="price">Rs. 180</span>
+					</button>
+					<button class="size-btn">
+						<span class="size">Extra Cheese</span>
+						<span class="price">Rs. 210</span>
+					</button>
+				</div>
+			</div>
+			
+		</section>
+
+		<section class="proceed-btn">
+			<button id="proceed">Proceed to place Order</button>
+		</section>
+		<aside class="loading-menu">
+			<h4>More Options will be loaded in few days...</h4>
+		</aside>
+	</main>
+
+	<footer>
+		<div class="footer__bar">
+			<h6>&copy; Copyright 2021, FoodCourt.com. All Rights Reserved</h6>
+		</div>
+	</footer>
+
+	<script src="../static/javaScripts/menuPage.js"></script>
+</body>
+
+</html>
